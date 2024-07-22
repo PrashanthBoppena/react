@@ -1,0 +1,90 @@
+.library-management-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the max-width calculation */
+}
+
+.search-container {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.results-container {
+  overflow-y: auto;
+  max-height: calc(100vh - 180px); /* Adjust as necessary */
+}
+
+.results {
+  padding: 10px 0;
+}
+
+.books-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures two columns with items of at least 300px width */
+  gap: 20px;
+}
+
+.book-item {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+  text-align: center; /* Center text and images horizontally */
+}
+
+.book-item:hover {
+  transform: translateY(-5px);
+}
+
+.book-item img {
+  display: block; /* Ensure images don't have extra space below */
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.book-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center; /* Center text horizontally */
+}
+
+

@@ -1,0 +1,71 @@
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.search-bar {
+    margin: 20px;
+
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+
+.combined-results {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library-results, .wiki-results {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.library-results h2, .wiki-results h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.library-results-list, .wiki-results-list {
+    max-height: 500px; /* Limit the height of the results */
+    overflow-y: auto; /* Enable vertical scroll for results */
+}
+
+.result-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.result-item .result-content {
+    text-align: center;
+}
+
+.result-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.result-item .result-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.result-item .result-author {
+    color: #666;
+}
+
+.result-item .result-description {
+    color: #555;
+}

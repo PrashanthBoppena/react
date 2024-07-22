@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
+  <defs>
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="20%" style="stop-color:#61DAFB;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:white;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g fill="#61DAFB">
+    <text x="100" y="100" font-family="Verdana" font-size="50" font-weight="bold" fill="#61DAFB">pashi</text>
+    <circle cx="420.9" cy="296.5" r="45.7" fill="url(#circleGradient)" stroke="#61DAFB" stroke-width="2"/>
+    <path d="M520.5 78.1z"/>
+  </g>
+</svg>

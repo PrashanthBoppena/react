@@ -1,0 +1,7 @@
+{
+    "loginHeader": "अपने खाते में लॉग इन करें",
+    "usernameLabel": "उपयोगकर्ता नाम या ईमेल:",
+    "passwordLabel": "पासवर्ड:",
+    "loginButton": "लॉग इन",
+    "invalidCredentialsError": "अमान्य उपयोगकर्ता नाम या पासवर्ड। कृपया पुनः प्रयास करें।"
+}

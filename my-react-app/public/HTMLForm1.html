@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <from id="HTMLForm1">
+            <fieldset>
+              <legend>Personal Details:</legend>
+            <lable>Enter your Name:
+              <input type="text"/>
+            </lable><br>
+            <lable>Gender:
+              <label for="male">Male</label>
+              <input type="radio" name="gender" value="male" id="male"/>
+              <label for="female">Female</label>
+              <input type="radio" name="gender" value="female" id="female"/>
+            </lable> <br> 
+            <lable>Skills:
+              <label for="java">JAVA</label>
+              <input type="checkbox" id="java" name="java"/>
+              <label for="sql">SQL</label>
+              <input type="checkbox" id="sql" name="sql"/>
+              <label for="react">React</label>
+              <input type="checkbox" id="react" name="react"/>
+            </lable><br>  
+            
+            <label for="country">Country:
+            <select id="country" name="country">
+              <option value="INDIA">INDIA</option>
+              <option value="RUSSIA" selected>RUSSIA</option>
+              <option value="UK">UK</option>
+            </select> 
+          </label><br>
+          <label>Browsers:
+          <input list="browsers">
+          <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        </label>
+        </fieldset>
+          <br>
+          <br>
+              <input type="reset" value="Submit"/>
+          </from>
+    </body>
+</html>
+

@@ -1,0 +1,7 @@
+{
+    "loginHeader": "Login to Your Account",
+    "usernameLabel": "Username or Email:",
+    "passwordLabel": "Password:",
+    "loginButton": "Login",
+    "invalidCredentialsError": "Invalid username or password. Please try again."
+}
