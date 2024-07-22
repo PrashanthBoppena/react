@@ -1,0 +1,86 @@
+/* Mobile navigation container */
+.mobile-navigation {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001; /* Ensure it's above other elements */
+  cursor: pointer;
+}
+
+/* Mobile navigation main content */
+.mobile-navigation-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e41616; /* White background */
+  box-shadow: 0 0 10px rgba(89, 207, 42, 0.1); /* Subtle shadow */
+}
+
+/* Mobile navigation logo */
+.mobile-navigation-logo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+/* Mobile navigation menu */
+.mobile-navigation-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.mobile-navigation-menu-item {
+  margin-right: 10px;
+}
+
+/* Mobile navigation secondary content */
+.mobile-navigation-sec {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #df9f9f; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Mobile navigation search bar */
+.mobile-navigation-sec .search-bar {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Mobile navigation filters toggle button */
+.mobile-navigation-sec .filters-toggle {
+  flex-shrink: 0;
+}
+
+/* Mobile menu overlay */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ca1313;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Ensure it's above the main navigation */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Initially off-screen */
+}
+
+/* Show the mobile menu when open */
+.mobile-menu.open {
+  transform: translateX(0); /* Slide in when open */
+}
+
+/* Additional styles as needed */
