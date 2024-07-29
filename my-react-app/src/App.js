@@ -14,10 +14,13 @@ import Calculator from "./Calculator.js";
 import FirebaseRegForm from "./FirebaseRegForm.js";
 import ReactReduxAPP from "./ReactRedux1/ReactReduxAPP.js";
 import OpenApiTasksApp from "./assets/OpenApiTasks/OpenApiTasksApp.js";
+import PaymentPage from "./assets/components/PaymentPage.jsx";
+import FormWithMovingButton from "./assets/components/MovingButton.jsx";
+import UserSearchSuggestion from "./assets/components/UserSearchSuggestion.jsx";
 
 export default function App() {
   return (
-    <OpenApiTasksApp />
+    <UserSearchSuggestion />
   )
 }
 

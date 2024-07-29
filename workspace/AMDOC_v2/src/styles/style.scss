@@ -1,0 +1,119 @@
+// ---------------------------
+// 00 - VENDORS
+
+// ---------------------------
+// 01 - SETTINGS
+
+@import './1 - settings/breakpoints';
+@import './1 - settings/colors';
+@import './1 - settings/sizes';
+@import './1 - settings/typography';
+@import './1 - settings/zindex';
+
+// ---------------------------
+// 02 - TOOLS
+
+@import './2 - tools/functions';
+@import './2 - tools/mixins';
+
+// ---------------------------
+// 03 - GENERIC
+
+// ---------------------------
+// 04 - ELEMENTS
+
+@import './4 - elements/base';
+@import './4 - elements/button';
+@import './4 - elements/input';
+@import './4 - elements/link';
+@import './4 - elements/select';
+@import './4 - elements/textarea';
+@import './4 - elements/label';
+
+
+// ---------------------------
+// 05 - COMPONENTS
+
+@import './5 - components/icons';
+@import './5 - components/navigation';
+@import './5 - components/product';
+@import './5 - components/basket';
+@import './5 - components/sidebar';
+@import './5 - components/searchbar';
+@import './5 - components/badge';
+@import './5 - components/footer';
+@import './5 - components/filter';
+@import './5 - components/pricerange';
+@import './5 - components/modal';
+@import './5 - components/auth';
+@import './5 - components/banner';
+@import './5 - components/toast';
+@import './5 - components/home';
+@import './5 - components/circular-progress';
+@import './5 - components/preloader';
+@import './5 - components/pill';
+@import './5 - components/tooltip';
+@import './5 - components/color-chooser';
+
+// -- Admin components
+@import './5 - components/admin/grid';
+@import './5 - components/admin/product';
+@import './5 - components/sidenavigation';
+// @import './5 - components/admin/user';
+
+// -- Mobile components
+// @import './5 - components/mobile/bottom-navigation';
+@import './5 - components/mobile/mobile-navigation';
+
+// -- Profile components
+@import './5 - components/profile/user-nav';
+@import './5 - components/profile/user-profile';
+@import './5 - components/profile/user-tab';
+@import './5 - components/profile/editprofile';
+
+// -- Checkout components
+@import './5 - components/checkout/checkout';
+
+// -- 404
+@import './5 - components/404/page-not-found';
+
+
+
+// ---------------------------
+// 06 - UTILS
+
+@import './6 - utils/state';
+@import './6 - utils/animation';
+@import './6 - utils/utils';
+
+
+/* styles.css or App.css */
+:root {
+    --nav-bg: #f8f8f8;
+    --nav-bg-scrolled: #fff;
+    --nav-bg-shadow: 0 5px 10px rgba(0, 0, 0, .02);
+    --background-color: #fff;
+    --background-color-01: #f2f2f2;
+    --paragraph-color: #070000;
+    --heading-color: #1a1a1a;
+    --border-color: #e1e1e1;
+    --border-color-focus: #c5c5c5;
+    --white: #fff;
+    --black: #000;
+    --off-black: #303030;
+    --off-white: #f0f0f0;
+    --red: rgba(247, 45, 45, 0.986);
+    --green: rgb(59, 150, 32);
+    --yellow: rgb(228, 165, 31);
+    --gray-01: #3a3a3a;
+    --gray-10: #818181;
+    --gray-20: #b6b6b6;
+    --button-color: var(--green); /* Example of using a variable within another variable */
+    --button-hover: lighten(var(--button-color), 10%);
+    --color-facebook: #0078ff;
+    --color-facebook-hover: darken(var(--color-facebook), 5%);
+    --color-github: #24292e;
+    --color-github-hover: lighten(var(--color-github), 5%);
+    --color-success: #000;
+  }
+  

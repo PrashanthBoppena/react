@@ -1,0 +1,56 @@
+/* App.css */
+:root {
+  --nav-bg: #f8f8f8;
+  --nav-bg-scrolled: #fff;
+  --nav-bg-shadow: 0 5px 10px rgba(0, 0, 0, .02);
+  --background-color: #fff;
+  --nav-background-color: #fff;
+  --background-color-01: #f2f2f2;
+  --paragraph-color: #070000;
+  --heading-color: #1a1a1a;
+  --border-color: #e1e1e1;
+  --border-color-focus: #c5c5c5;
+  --white: #fff;
+  --black: #000;
+  --off-black: #303030;
+  --off-white: #f0f0f0;
+  --red: rgba(247, 45, 45, 0.986);
+  --green: rgb(59, 150, 32);
+  --yellow: rgb(228, 165, 31);
+  --gray-01: #3a3a3a;
+  --gray-10: #818181;
+  --gray-20: #b6b6b6;
+  --button-color: var(--green); /* Example of using a variable within another variable */
+  --button-hover: lighten(var(--button-color), 10%);
+  --color-facebook: #0078ff;
+  --color-facebook-hover: darken(var(--color-facebook), 5%);
+  --color-github: #24292e;
+  --color-github-hover: lighten(var(--color-github), 5%);
+  --color-success: #000;
+}
+
+/* Update CSS variables dynamically based on application-wide state */
+:root {
+  --nav-bg: ${props => props.navBg};
+  --nav-bg-scrolled: ${props => props.navBgScrolled};
+  --nav-background-color: ${props => props.backgroundColor};
+  --paragraph-color: ${props => props.paragraphColor};
+  --heading-color: ${props => props.headingColor};
+  --border-color: ${props => props.borderColor};
+  --button-color: ${props => props.buttonColor};
+}
+
+/* Additional styles can use these variables */
+body {
+  background-color: var(--nav-background-colorbackground-color);
+  color: var(--paragraph-color);
+}
+
+/* Example usage in components */
+.navbar {
+  background-color: var(--nav-bg);
+  color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Define other styles using the CSS variables as needed */

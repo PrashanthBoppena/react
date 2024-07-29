@@ -1,0 +1,63 @@
+
+.custom-list-item {
+  font-size: 2rem; /* Adjust text size */
+}
+
+.custom-list-item .MuiListItemIcon-root {
+  font-size: 4rem; /* Adjust icon size */
+}
+.wallet-container {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .wallet-icon {
+    font-size: 40px;
+    color: #3f51b5;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .wallet-balance-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #e0f234;
+    margin: 20px 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .wallet-balance-text {
+    color: blue;
+    transition: opacity 0.3s ease;
+  }
+  
+  .add-money-button {
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem; /* Larger text */
+    transition: opacity 0.3s ease;
+  }
+  
+  .wallet-container.hovered {
+    transform: scale(1.05);
+  }
+  
+  .wallet-container.hovered .wallet-balance-box,
+  .wallet-container.hovered .wallet-icon,
+  .wallet-container.hovered h3,
+  .wallet-container.hovered h5 {
+    opacity: 0.3;
+  }
+  
+  .wallet-container.hovered .add-money-button {
+    opacity: 1;
+  }
+  
